@@ -14,6 +14,7 @@ export default function Header() {
         <a
           href="#"
           data-pending="cws-listing"
+          aria-disabled="true"
           className={styles.cta}
         >
           Add to Chrome

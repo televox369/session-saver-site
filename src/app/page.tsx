@@ -47,7 +47,7 @@ export default function Home() {
             Session Saver snapshots every open window and tab, then restores
             them in one click. Free, no signup, nothing ever leaves your device.
           </p>
-          <a href="#" data-pending="cws-listing" className={styles.heroCta}>
+          <a href="#" data-pending="cws-listing" aria-disabled="true" className={styles.heroCta}>
             Add to Chrome — it&apos;s free
           </a>
         </motion.section>

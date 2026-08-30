@@ -40,6 +40,6 @@
   padding: 0.5rem 1rem;
   border-radius: var(--r);
   background: var(--grad);
-  color: #04120a;
+  color: var(--on-grad);
   font-weight: 600;
 }

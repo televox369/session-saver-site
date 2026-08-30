@@ -8,6 +8,7 @@
   --cyan: #38bdf8;
   --grad: linear-gradient(135deg, #22c55e, #0ea5e9);
   --grad-text: linear-gradient(120deg, #86efac, #7dd3fc, #4ade80);
+  --on-grad: #04120a;
   --border: rgba(255, 255, 255, 0.08);
   --r: 10px;
   --r-lg: 16px;

@@ -38,7 +38,7 @@
   padding: 0.9rem 1.75rem;
   border-radius: var(--r-lg);
   background: var(--grad);
-  color: #04120a;
+  color: var(--on-grad);
   font-weight: 600;
   font-size: 1.05rem;
   box-shadow: var(--shadow-glow);
