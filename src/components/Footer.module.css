@@ -1,0 +1,15 @@
+/* src/components/Footer.module.css */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--fg-muted);
+  font-size: 0.85rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.25rem;
+}
