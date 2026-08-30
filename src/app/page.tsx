@@ -1,69 +1,90 @@
+// src/app/page.tsx
+"use client";
+
 import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import styles from "./page.module.css";
 
+const FEATURES = [
+  {
+    title: "Save all windows",
+    body: "One click snapshots every open window and tab as a named session.",
+  },
+  {
+    title: "One-click restore",
+    body: "Bring back a whole session's windows and tabs together, exactly as you left them.",
+  },
+  {
+    title: "100% local",
+    body: "No account, no server, no network requests. Your tabs never leave your device.",
+  },
+  {
+    title: "Export & import",
+    body: "Back up sessions to a JSON file, or move them to another computer.",
+  },
+];
+
 export default function Home() {
+  const reduceMotion = useReducedMotion();
+
   return (
-    <div className={styles.page}>
+    <>
+      <Header />
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
+        <motion.section
+          className={styles.hero}
+          initial={reduceMotion ? undefined : { opacity: 0, y: 24 }}
+          animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <h1 className={styles.title}>
+            Save your tabs.<br />
+            <span className={styles.gradText}>Get them back exactly as you left them.</span>
           </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className={styles.subtitle}>
+            Session Saver snapshots every open window and tab, then restores
+            them in one click. Free, no signup, nothing ever leaves your device.
           </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+          <a href="#" data-pending="cws-listing" className={styles.heroCta}>
+            Add to Chrome — it&apos;s free
           </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </motion.section>
+
+        <motion.div
+          className={styles.screenshotWrap}
+          initial={reduceMotion ? undefined : { opacity: 0, y: 32 }}
+          whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <Image
+            src="/screenshots/screenshot-1-hero.png"
+            alt="Session Saver popup showing saved sessions"
+            width={1280}
+            height={800}
+            className={styles.screenshot}
+          />
+        </motion.div>
+
+        <section className={styles.features}>
+          {FEATURES.map((f, i) => (
+            <motion.div
+              key={f.title}
+              className={styles.card}
+              initial={reduceMotion ? undefined : { opacity: 0, y: 20 }}
+              whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <h3>{f.title}</h3>
+              <p>{f.body}</p>
+            </motion.div>
+          ))}
+        </section>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
