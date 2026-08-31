@@ -10,6 +10,7 @@ export default function Header() {
         Session Saver
       </Link>
       <nav className={styles.nav}>
+        <Link href="/guides">Guides</Link>
         <Link href="/privacy">Privacy</Link>
         <a
           href="#"
