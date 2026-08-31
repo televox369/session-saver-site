@@ -44,7 +44,7 @@ export default function Home() {
             <span className={styles.gradText}>Get them back exactly as you left them.</span>
           </h1>
           <p className={styles.subtitle}>
-            Session Saver snapshots every open window and tab, then restores
+            Tab Saint snapshots every open window and tab, then restores
             them in one click. Free, no signup, nothing ever leaves your device.
           </p>
           <a href="#" data-pending="cws-listing" aria-disabled="true" className={styles.heroCta}>
@@ -61,7 +61,7 @@ export default function Home() {
         >
           <Image
             src="/screenshots/screenshot-1-hero.png"
-            alt="Session Saver popup showing saved sessions"
+            alt="Tab Saint popup showing saved sessions"
             width={1280}
             height={800}
             className={styles.screenshot}

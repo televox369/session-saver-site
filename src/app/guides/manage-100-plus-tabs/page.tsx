@@ -9,7 +9,7 @@ import styles from "../guide.module.css";
 const guide = getGuide("manage-100-plus-tabs")!;
 
 export const metadata: Metadata = {
-  title: `${guide.title} — Session Saver`,
+  title: `${guide.title} — Tab Saint`,
   description: guide.dek,
 };
 
@@ -87,15 +87,15 @@ export default function Page() {
 
         <div className={styles.callout}>
           <p>
-            Session Saver does step 3 in one click — save every open window
+            Tab Saint does step 3 in one click — save every open window
             and tab as a named session, close what you don&apos;t need open
             right now, and restore the whole batch later exactly as it was.
           </p>
         </div>
 
-        <h2>What Session Saver doesn&apos;t do</h2>
+        <h2>What Tab Saint doesn&apos;t do</h2>
         <p>
-          To be direct about scope: Session Saver is a popup-only extension
+          To be direct about scope: Tab Saint is a popup-only extension
           that reads and restores your open tabs — it doesn&apos;t change
           how Chrome&apos;s own tab strip renders, and it doesn&apos;t run
           in the background monitoring your tab count. If your tab strip is

@@ -1,4 +1,4 @@
-// src/app/guides/session-saver-vs-alternatives/page.tsx
+// src/app/guides/tab-saint-vs-alternatives/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -6,10 +6,10 @@ import Footer from "@/components/Footer";
 import { getGuide } from "@/lib/guides";
 import styles from "../guide.module.css";
 
-const guide = getGuide("session-saver-vs-alternatives")!;
+const guide = getGuide("tab-saint-vs-alternatives")!;
 
 export const metadata: Metadata = {
-  title: `${guide.title} — Session Saver`,
+  title: `${guide.title} — Tab Saint`,
   description: guide.dek,
 };
 
@@ -37,7 +37,7 @@ export default function Page() {
         <p className={styles.muted}>Updated {guide.updated}</p>
 
         <p className={styles.lead}>
-          We built Session Saver, so take the framing with that in mind —
+          We built Tab Saint, so take the framing with that in mind —
           but the numbers below are pulled straight from each
           listing&apos;s own public Chrome Web Store page, not from us.
         </p>
@@ -76,7 +76,7 @@ export default function Page() {
                 <td>Free</td>
               </tr>
               <tr>
-                <td>Session Saver</td>
+                <td>Tab Saint</td>
                 <td>New</td>
                 <td>No reviews yet</td>
                 <td>—</td>
@@ -117,7 +117,7 @@ export default function Page() {
           alternative if Session Buddy feels heavier than you need.
         </p>
 
-        <h2>Where Session Saver is different</h2>
+        <h2>Where Tab Saint is different</h2>
         <p>
           Honestly: it&apos;s new, and it doesn&apos;t have a review history
           yet — that&apos;s not a claim we can make up. What it does have is

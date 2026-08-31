@@ -1,6 +1,6 @@
-# Session Saver — Marketing Site
+# Tab Saint — Marketing Site
 
-Marketing site for the free "Session Saver" Chrome extension. Next.js 16 (App Router),
+Marketing site for the free "Tab Saint" Chrome extension. Next.js 16 (App Router),
 CSS Modules, Framer Motion. No backend — the extension itself is free and local-only.
 
 ## Develop

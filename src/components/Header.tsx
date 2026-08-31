@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.header}>
       <Link href="/" className={styles.brand}>
         <span className={styles.logoDot} />
-        Session Saver
+        Tab Saint
       </Link>
       <nav className={styles.nav}>
         <Link href="/guides">Guides</Link>

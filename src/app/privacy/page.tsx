@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import styles from "./privacy.module.css";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Session Saver",
-  description: "Session Saver does not collect, transmit, sell, or share any of your data.",
+  title: "Privacy Policy — Tab Saint",
+  description: "Tab Saint does not collect, transmit, sell, or share any of your data.",
 };
 
 export default function PrivacyPage() {
@@ -19,14 +19,14 @@ export default function PrivacyPage() {
 
         <p className={styles.lead}>
           <strong>
-            Short version: Session Saver does not collect, transmit, sell, or
+            Short version: Tab Saint does not collect, transmit, sell, or
             share any of your data. Everything it stores stays on your own device.
           </strong>
         </p>
 
         <h2>What the extension stores</h2>
         <p>
-          When you save a session, Session Saver records the URLs and titles
+          When you save a session, Tab Saint records the URLs and titles
           of your open tabs (and each window&apos;s grouping) so it can reopen
           them later. This data is written only to your browser&apos;s local
           extension storage (<code>chrome.storage.local</code>) on your own

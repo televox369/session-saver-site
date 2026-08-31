@@ -4,19 +4,19 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const siteUrl = "https://sessionsaver.app"; // placeholder domain until a real one is chosen
+const siteUrl = "https://tabsaint.app"; // placeholder domain until a real one is chosen
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Session Saver — Save & Restore Chrome Tabs",
+  title: "Tab Saint — Save & Restore Chrome Tabs",
   description:
     "Save all your open windows and tabs as a named session, then restore them in one click. 100% local — nothing leaves your device.",
   openGraph: {
-    title: "Session Saver — Save & Restore Chrome Tabs",
+    title: "Tab Saint — Save & Restore Chrome Tabs",
     description:
       "Save all your open windows and tabs as a named session, then restore them in one click. 100% local — nothing leaves your device.",
     url: siteUrl,
-    siteName: "Session Saver",
+    siteName: "Tab Saint",
     type: "website",
   },
 };
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Session Saver",
+  name: "Tab Saint",
   applicationCategory: "BrowserApplication",
   operatingSystem: "Chrome",
   offers: {

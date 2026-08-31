@@ -23,8 +23,8 @@ export const GUIDES: GuideMeta[] = [
     updated: "2026-08-31",
   },
   {
-    slug: "session-saver-vs-alternatives",
-    title: "Session Saver vs Session Buddy vs Tab Session Manager",
+    slug: "tab-saint-vs-alternatives",
+    title: "Tab Saint vs Session Buddy vs Tab Session Manager",
     dek: "An honest comparison of the three main Chrome session managers — no product on this page pays for its placement.",
     updated: "2026-08-31",
   },

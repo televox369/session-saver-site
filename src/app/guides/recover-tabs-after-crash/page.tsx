@@ -9,7 +9,7 @@ import styles from "../guide.module.css";
 const guide = getGuide("recover-tabs-after-crash")!;
 
 export const metadata: Metadata = {
-  title: `${guide.title} — Session Saver`,
+  title: `${guide.title} — Tab Saint`,
   description: guide.dek,
 };
 
@@ -99,9 +99,9 @@ export default function Page() {
           </li>
         </ol>
 
-        <h2>Where Session Saver fits</h2>
+        <h2>Where Tab Saint fits</h2>
         <p>
-          <Link href="/">Session Saver</Link> does exactly the three steps
+          <Link href="/">Tab Saint</Link> does exactly the three steps
           above in one click: save every open window and tab as a named
           session, restore it later exactly as it was, and export/import as
           JSON for backup. It runs entirely in your browser&apos;s local

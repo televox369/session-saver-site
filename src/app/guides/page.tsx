@@ -7,7 +7,7 @@ import { GUIDES } from "@/lib/guides";
 import styles from "./guides.module.css";
 
 export const metadata: Metadata = {
-  title: "Guides — Session Saver",
+  title: "Guides — Tab Saint",
   description:
     "Practical guides for managing Chrome tabs and windows: crash recovery, taming huge tab counts, and how session managers compare.",
 };
